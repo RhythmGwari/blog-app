@@ -22,8 +22,7 @@ const Blogs = () => {
     const indexOfLastPage = currentPage*postsPerPage;
     const indexOfFirstPage = indexOfLastPage - postsPerPage;
     const currentPosts = posts.slice(indexOfFirstPage, indexOfLastPage);
-    console.log(posts[0]);
-
+    
     const paginate = (pageNumber) => setCurrentPage(pageNumber);
         return(
             <section className="blog-page-sec">                
